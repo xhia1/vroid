@@ -1,0 +1,25 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>model-viewer</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <style>
+      model-viewer {
+      width: 100%;
+      height: 100vh;
+      background-color: #faebd7;} /* 16進数で背景の色を指定 */
+    </style>
+      <model-viewer 
+      camera-controls camera-orbit="120deg 50deg 10m" 
+      src="2risako3.gltf" /* 3Dファイルを指定 */
+      poster="assets/loding.gif"
+      alt="non"
+      shadow-intensity="1"
+      auto-rotate>
+    </model-viewer>
+  </body>
+</html>
